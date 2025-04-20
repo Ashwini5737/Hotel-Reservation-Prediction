@@ -31,8 +31,7 @@ pipeline{
             }
         }
 
-        stage('Building and Pushing Dockerapt-get install -y curl apt-transport-https ca-certificates gnupg
- Image to GCR'){
+        stage('Building and Pushing Dockerapt-get install -y curl apt-transport-https ca-certificates gnupg Image to GCR'){
             steps{
                 withCredentials([file(credentialsId: 'gcp-key' , variable : 'GOOGLE_APPLICATION_CREDENTIALS')]){
                     script{
